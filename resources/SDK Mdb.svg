@@ -1,0 +1,114 @@
+<svg width="797" height="366" xmlns="http://www.w3.org/2000/svg" stroke="null">
+ <title>Logo</title>
+ <g id="Layer_1" stroke="null">
+  <title stroke="null">Layer 1</title>
+  <defs transform="translate(-295 -45) translate(379.107 0) translate(0 139.009)">
+   <g id="svg_6"/>
+   <clipPath id="svg_5">
+    <path clip-rule="nonzero" d="m205.47057,892.87917l137.25,0l0,157l-137.25,0l0,-157zm0,0" id="svg_8"/>
+   </clipPath>
+   <clipPath id="svg_4">
+    <path clip-rule="nonzero" d="m458.50232,272.71818l121.47266,0l0,135l-121.47266,0l0,-135zm0,0" id="svg_13"/>
+   </clipPath>
+   <clipPath id="svg_3">
+    <path clip-rule="nonzero" d="m458.50232,333.71818l71.47266,0l0,74l-71.47266,0l0,-74zm0,0" id="svg_15"/>
+   </clipPath>
+   <linearGradient id="svg_40" x1="0" y1="0" x2="0" y2="1" spreadMethod="pad">
+    <stop stop-color="#d7dbfe" offset="0.41014"/>
+    <stop stop-color="#1d1c21" offset="0.98436" stop-opacity="0.99219"/>
+   </linearGradient>
+  </defs>
+  <defs transform="translate(379.107 0) translate(0 310.009)">
+   <g id="svg_52"/>
+   <clipPath id="svg_49">
+    <path clip-rule="nonzero" d="m454.63415,419.00912l137.25,0l0,157l-137.25,0l0,-157zm0,0" id="svg_54"/>
+   </clipPath>
+   <clipPath id="svg_48">
+    <path clip-rule="nonzero" d="m148.6799,73.80431l121.47266,0l0,135l-121.47266,0l0,-135zm0,0" id="svg_55"/>
+   </clipPath>
+   <clipPath id="svg_47">
+    <path clip-rule="nonzero" d="m148.6799,134.80431l71.47266,0l0,74l-71.47266,0l0,-74zm0,0" id="svg_56"/>
+   </clipPath>
+  </defs>
+  <g id="svg_83" stroke-width="0">
+   <g stroke="null" stroke-width="6" id="svg_20">
+    <path stroke="#ff8c00" stroke-miterlimit="4" stroke-width="3" d="m0.15358,164.49115l111.90397,-32.72317" fill="none" stroke-linecap="round" id="svg_21"/>
+    <path stroke="#ff8c00" stroke-miterlimit="4" stroke-width="3" d="m112.18685,131.79313l0,31.21533" fill="none" stroke-linecap="round" id="svg_23"/>
+    <path stroke="#ff8c00" stroke-miterlimit="4" stroke-width="3" d="m0.30716,195.85224l111.7428,-32.88239" fill="none" stroke-linecap="round" id="svg_25"/>
+    <path stroke="#ff8c00" stroke-miterlimit="4" stroke-width="3" d="m0.16574,164.6034l0,31.21533" fill="none" stroke-linecap="round" id="svg_32"/>
+    <path stroke="#ff8c00" stroke-miterlimit="4" stroke-width="3" d="m0.17791,164.41911l111.90864,33.04316" fill="none" stroke-linecap="round" id="svg_33"/>
+    <path stroke="#ff8c00" stroke-miterlimit="4" stroke-width="3" d="m112.18685,197.74875l0,31.21701" fill="none" stroke-linecap="round" id="svg_35"/>
+    <path stroke="#ff8c00" stroke-miterlimit="4" stroke-width="3" d="m0.17791,195.81203l111.90864,33.04316" fill="none" stroke-linecap="round" id="svg_36"/>
+    <path stroke="#ff8c00" stroke-miterlimit="4" stroke-width="3" d="m0,230.57745l111.90397,-32.72317" fill="none" stroke-linecap="round" id="svg_37"/>
+    <path stroke="#ff8c00" stroke-miterlimit="4" stroke-width="3" d="m0.15358,261.94021l111.7428,-32.88407" fill="none" stroke-linecap="round" id="svg_39"/>
+    <path stroke="#ff8c00" stroke-miterlimit="4" stroke-width="3" d="m0.01216,230.6897l0,31.21701" fill="none" stroke-linecap="round" id="svg_46"/>
+   </g>
+   <g id="svg_78">
+    <path fill="none" d="m374.97307,159.75956l0,106.13427l-15.51845,0l-46.87221,-29.13086l0.0461,-14.87532l62.34456,-62.12808l0,-0.00001z" id="svg_70" stroke-width="5" stroke-linecap="round" stroke="#ff8c00"/>
+    <path fill="#ff8c00" d="m277.99603,157.89275l111.63027,-0.25092l0,20.98628l-59.90458,0l-31.15148,-0.15212l-20.57421,-20.58324z" id="svg_76" stroke-width="5" stroke-linecap="round" stroke="#1d1c21" transform="rotate(136 333.811 168.135)"/>
+    <path fill="#ff8c00" d="m276.53706,135.56925l24.17514,0l0,136.32454l-12.08757,0l-12.08757,-17.04056l0,-17.04057l0,-34.08114l0,-68.16227z" id="svg_75" stroke="#1d1c21" stroke-width="5" stroke-linecap="round"/>
+   </g>
+   <g id="svg_79">
+    <g stroke="null" id="svg_57">
+     <g stroke="null" id="svg_59">
+      <path fill="#d7dbfe" stroke="null" d="m168.37075,248.20676l30.1019,0c10.42835,0 18.58668,-4.64916 24.47499,-13.95149c5.89174,-9.30032 8.83934,-22.01057 8.83934,-38.12873c0,-15.93028 -2.97167,-28.32072 -8.915,-37.16932c-5.94334,-8.8466 -14.51956,-13.32986 -25.72694,-13.44779l-28.77428,0l0,102.69733l-0.00001,0zm-15.55999,-118.1519l46.60429,0c15.06471,0 26.8568,6.01633 35.37799,18.04499c8.52463,12.02466 12.7878,27.63914 12.7878,46.84342c0,20.60143 -4.26317,37.2053 -12.7878,49.8096c-8.52119,12.60031 -20.52309,18.90047 -36.00396,18.90047l-45.97831,0l0,-133.59847l-0.00001,-0.00001zm0,0" id="svg_60"/>
+     </g>
+    </g>
+    <path stroke-width="10" id="svg_51" d="m134.73837,235.68355l46.0791,-77.65888l46.0791,77.65888l-92.15819,0l-0.00001,0z" fill="#ff8c00" stroke-linecap="round" stroke="#1d1c21" transform="rotate(90 180.817 196.854)"/>
+   </g>
+  </g>
+  <rect fill="#ff8c00" stroke-width="0" x="409.44659" y="137.76139" width="21.24826" height="11.99902" id="svg_1" stroke="#000000"/>
+  <rect rx="10" id="svg_7" height="62.24752" width="179.09833" y="121.91003" x="420.13793" stroke-width="0" fill="#ff8c00" stroke="#000000"/>
+  <path transform="rotate(-90 684.55 153.033)" opacity="0.4" id="svg_45" d="m624.86614,256.55765l59.68409,-207.0485l59.68409,207.0485l-119.36817,0l-0.00001,0z" stroke-width="0" fill="url(#svg_40)" stroke="#000000"/>
+  <ellipse ry="13" rx="16.24999" id="svg_10" cy="194.52956" cx="509.52038" stroke-width="0" fill="#ff8c00" stroke="#000000"/>
+  <rect id="svg_30" height="30.24726" width="27.09712" y="137.91017" x="580.47361" stroke-width="0" fill="#ff8c00" stroke="#000000"/>
+  <path id="svg_31" d="m600.56278,176.20065l10.87508,-46.33372l36.25027,0l10.87508,46.33372l-58.00043,0z" stroke-width="0" fill="#ff8c00" stroke="#000000" transform="rotate(-90 629.563 153.034)"/>
+  <rect id="svg_38" height="12.24999" width="42.99997" y="181.52954" x="488.02042" stroke-width="0" fill="#ff8c00" stroke="#000000"/>
+  <g id="svg_44" stroke="null" stroke-width="0">
+   <path id="svg_34" d="m515.11715,199.47629l-5.59752,155.00242l-5.59752,-155.00242l11.19504,0z" stroke-width="0" fill="#ff8c00" stroke="#000000"/>
+   <path id="svg_42" d="m520.88349,199.47614l20.01855,153.6723l-31.04351,-151.62286l11.02496,-2.04944z" stroke-width="0" fill="#ff8c00" stroke="#000000"/>
+   <path id="svg_43" d="m509.18231,201.52497l-31.04352,151.62286l20.01856,-153.6723l11.02496,2.04944z" stroke-width="0" fill="#ff8c00" stroke="#000000"/>
+  </g>
+  <path fill="#ff8c00" stroke-width="0" d="m391.33996,154.26007l0,-20.49834l18.99845,20.49834l-18.99845,0z" id="svg_9" stroke="#000000" transform="rotate(180 400.839 144.011)"/>
+  <text fill="#000000" stroke-width="0" x="424.6678" y="146.90994" id="svg_18" font-size="24" font-family="'Archivo'" text-anchor="start" xml:space="preserve" font-weight="bold" stroke="#000000">REC</text>
+  <ellipse fill="#ff0000" stroke-width="0" cx="487.1691" cy="138.94321" id="svg_19" rx="8" ry="8" stroke="#000000"/>
+  <g id="svg_27" stroke-width="0">
+   <g id="svg_62" fill="#ff8c00" stroke="#1d1c21" stroke-width="10" stroke-linecap="round">
+    <g id="svg_50">
+     <path fill="#ff8c00" stroke="#000000" stroke-width="0" opacity="undefined" d="m320.56977,35.78871l1.28123,0l8.96861,22.64416l0,43.22978l-10.24984,0l0,-65.87394z" id="svg_26"/>
+     <path fill="#ff8c00" stroke-width="0" opacity="undefined" d="m359.42462,101.60019l-4.1306,0.06245l-34.72428,-83.77512l0,-7.18956l8.44485,0l30.38498,74.07854l0.02504,16.82368l0.00001,0.00001z" id="svg_28" stroke="#000000"/>
+    </g>
+    <g id="svg_61">
+     <path fill="#ff8c00" stroke-width="0" opacity="undefined" d="m385.57876,34.28904l1.53122,0l-0.01562,8.4217l-0.01563,8.4217l-0.00781,4.21085l-0.00391,2.10543l-19.17541,44.21389l-1.46872,0l-2.93744,0l0,-16.84339l22.09332,-50.53018z" id="svg_29" stroke="#000000"/>
+     <rect fill="#ff8c00" stroke-width="0" x="393.85975" y="11.66264" width="10.12481" height="90" id="svg_41" stroke="#000000"/>
+    </g>
+   </g>
+   <g id="svg_71">
+    <g id="svg_68">
+     <ellipse stroke="#000000" ry="3" rx="3" id="svg_81" cy="80.36062" cx="558.71464" stroke-width="0" fill="#ff8c00"/>
+     <ellipse stroke="#000000" ry="5" rx="5" id="svg_87" cy="70.33883" cx="545.77008" stroke-width="0" fill="#ff8c00"/>
+     <ellipse stroke="#000000" ry="5" rx="5" id="svg_16" cy="64.5055" cx="566.10341" stroke-width="0" fill="#ff8c00"/>
+     <ellipse stroke="#000000" ry="5" rx="5" id="svg_17" cy="80.83883" cx="575.93674" stroke-width="0" fill="#ff8c00"/>
+     <ellipse stroke="#000000" ry="5" rx="5" id="svg_22" cy="96.0055" cx="564.10341" stroke-width="0" fill="#ff8c00"/>
+     <ellipse stroke="#000000" ry="5" rx="5" id="svg_24" cy="90.17216" cx="545.10341" stroke-width="0" fill="#ff8c00"/>
+     <g id="svg_67">
+      <ellipse stroke="#ff8c00" stroke-width="11" ry="32" rx="32" id="svg_72" cy="80.36062" cx="558.71461" fill="none"/>
+      <rect stroke="#000000" rx="5" id="svg_73" height="85.41227" width="11" x="521.21462" stroke-width="0" fill="#ff8c00"/>
+     </g>
+    </g>
+    <g id="svg_69">
+     <ellipse ry="3" rx="3" id="svg_84" cy="80.36062" cx="456.54791" stroke-width="0" stroke="#000000" fill="#ff8c00"/>
+     <ellipse stroke="#000000" ry="5" rx="5" id="svg_85" cy="69.34069" cx="469.59624" stroke-width="0" fill="#ff8c00"/>
+     <ellipse stroke="#000000" ry="5" rx="5" id="svg_2" cy="83.33794" cx="440.10354" stroke-width="0" fill="#ff8c00"/>
+     <ellipse stroke="#000000" ry="5" rx="5" id="svg_11" cy="97.6676" cx="452.43416" stroke-width="0" fill="#ff8c00"/>
+     <ellipse stroke="#000000" ry="5" rx="5" id="svg_12" cy="90.8359" cx="471.26298" stroke-width="0" fill="#ff8c00"/>
+     <ellipse stroke="#000000" ry="5" rx="5" id="svg_14" cy="65.0055" cx="448.60342" stroke-width="0" fill="#ff8c00"/>
+     <g id="svg_65">
+      <ellipse stroke="#ff8c00" stroke-width="11" ry="32" rx="32" id="svg_53" cy="80.36062" cx="456.54795" fill="none"/>
+      <rect stroke="#000000" rx="5" id="svg_66" height="85.41227" width="11" x="483.04793" stroke-width="0" fill="#ff8c00"/>
+     </g>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg>
