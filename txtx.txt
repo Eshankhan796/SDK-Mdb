@@ -15,42 +15,14 @@ Overlay/Modal: rgba(29, 28, 33, 0.9) (Almost Black with 90% opacity)
 
 
 ```css 
-.a3 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  column-gap: 10px;
-  margin: 0 auto;
-  width: 100%;
-  height: 100%;
-  padding: 0 20px;
-}
-.a2 {
-  resize: none;
-  background: transparent;
-  max-width: 400px;
-  width: 100%;
-  height: 40px;
-  border-radius: 10px;
-  border: 2px solid #ff8c00;
-  padding: 5px;
-  outline: none;
-  font-size: 18px;
-  font-family: "Quicksand", sans-serif;
-  box-sizing: border-box;
-  color: #f9fafe;
-}
-.a4 {
-  width: 50px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 10px;
-  background: transparent;
-  border: 2px solid #FF8C00;
-  color: #f9fafe;
-  transition: all .3s ease-in-out;
-  font-size: 20px;
+.a7:not(:placeholder-shown)~.a10,
+.a7:focus~.a10 {
+  color: #00A36C;
+  transform: translateX(14px) translateY(-8px);
+  padding: 0 8px;
+  font-size: 14px;
+  background-color: #F5F6FF;
+  border-left: 2.5px solid #00A36C;
+  border-right: 2.5px solid #00A36C;
+  border-radius: 2px;
 }

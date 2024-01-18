@@ -116,6 +116,7 @@ nav {
 .a7 {
   width: 162px;
   height: 40px;
+  padding: 0 3px;
   border-radius: 10px;
   border: 2px solid #ff8c00;
   background: transparent;
@@ -123,6 +124,7 @@ nav {
   font-size: 18px;
   font-family: "Quicksand", sans-serif;
   box-sizing: border-box;
+  outline: none;
 }
 
 .a8 {
@@ -130,7 +132,7 @@ nav {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 15px 10px;
   width: 100%;
 }
 
@@ -141,6 +143,21 @@ nav {
   flex-direction: row;
   gap: 10px;
   width: 100%;
+}
+
+.a10 {
+  position: absolute;
+  top: -8px;
+  left: 0;
+  padding: 0 5px;
+  margin: 0 15px;
+  pointer-events: none;
+  font-size: 14px;
+  color: #f9fafe;
+  background-color: #1d1c21;
+  border-left: 2px solid #ff8c00;
+  border-right: 2px solid #ff8c00;
+  border-radius: 1.5px;
 }
 
 footer {
