@@ -15,14 +15,51 @@ Overlay/Modal: rgba(29, 28, 33, 0.9) (Almost Black with 90% opacity)
 
 
 ```css 
-.a7:not(:placeholder-shown)~.a10,
-.a7:focus~.a10 {
-  color: #00A36C;
-  transform: translateX(14px) translateY(-8px);
-  padding: 0 8px;
-  font-size: 14px;
-  background-color: #F5F6FF;
-  border-left: 2.5px solid #00A36C;
-  border-right: 2.5px solid #00A36C;
-  border-radius: 2px;
+.<div class="progress"></div>
+
+<style>
+.progress {
+   width: 67.2px;
+   height: 67.2px;
+   border-radius: 50%;
+   animation: progress-96zj2n 2s infinite;
 }
+
+@keyframes progress-96zj2n {
+   0% {
+      background: conic-gradient(#474bff 0     ,#0000 0);
+   }
+
+   12.5% {
+      background: conic-gradient(#474bff 45deg ,#0000 46deg);
+   }
+
+   25% {
+      background: conic-gradient(#474bff 90deg ,#0000 91deg);
+   }
+
+   37.5% {
+      background: conic-gradient(#474bff 135deg,#0000 136deg);
+   }
+
+   50% {
+      background: conic-gradient(#474bff 180deg,#0000 181deg);
+   }
+
+   62.5% {
+      background: conic-gradient(#474bff 225deg,#0000 226deg);
+   }
+
+   75% {
+      background: conic-gradient(#474bff 270deg,#0000 271deg);
+   }
+
+   87.5% {
+      background: conic-gradient(#474bff 315deg,#0000 316deg);
+   }
+
+   100% {
+      background: conic-gradient(#474bff 360deg,#0000 360deg);
+   }
+}
+</style>

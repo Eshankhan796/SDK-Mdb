@@ -20,7 +20,8 @@
     <img style="opacity: 1;" onclick="window.location.href = '/index.html'" class="BrandLogo" src="/resources/SDK Mdb.svg" alt="">
   </nav>
   <div style="margin-top: 30px;">
-    <form class="a3" style="flex-direction: column; row-gap: 15px;" onsubmit="MovieSearch(event)">
+    <form class="a3" style="flex-direction: column; row-gap: 15px;" onsubmit="MovieSearch(event); const encrypted = btoa(b4.value);
+    sessionStorage.setItem('searched', JSON.stringify(encrypted));">
       <div class="a9">
         <input id="b4" class="a2" value="" type="search" placeholder="Enter the movie name">
         <button class="a4" type="submit"><ion-icon name="search"></ion-icon></button>
@@ -72,7 +73,12 @@
       </div>
     </form>
   </div>
-  <div id="b7"></div>
+  <div class="a12">
+    <h3 style="padding: 20px; width: auto;" id="b8"></h3>
+    <h4 style="padding: 20px; width: auto;" id="b9"></h4>
+  </div>
+  <div class="a11" id="b7">
+  </div>
   <!-- JavaScript -->
   <script src="/JS/app.js"></script>
   <!-- ion-icon JavaScript -->
@@ -80,8 +86,8 @@
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   <!-- axios JavaScript -->
   <script src="
-    https://cdn.jsdelivr.net/npm/axios@1.6.5/dist/axios.min.js
-    "></script>
+      https://cdn.jsdelivr.net/npm/axios@1.6.5/dist/axios.min.js
+      "></script>
 </body>
 
 </html>
