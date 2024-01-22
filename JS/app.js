@@ -4,12 +4,14 @@ const b6 = document.getElementById('genre');
 const b7 = document.getElementById('b7');
 const b8 = document.getElementById('b8');
 const b9 = document.getElementById('b9');
-const apiUrl = 'https://yts.mx/api/v2/list_movies.json?'
-
+const b10 = document.getElementById('b10');
+const apiUrl = 'https://yts.mx/api/v2/list_movies.json?';
+let currentPage = 1;
 
 window.onload = () => {
   SessionInputTransfer();
-  axiosFetch(b4.value);
+  axiosFetch(b4.value, currentPage);
+  calcScrollValue;
 };
 
 function SessionInputTransfer() {
@@ -20,23 +22,35 @@ function SessionInputTransfer() {
 
 function MovieSearch(event) {
   event.preventDefault();
-  axiosFetch(b4.value);
+  currentPage = 1;
+  axiosFetch(b4.value, currentPage);
 }
 
-function axiosFetch(inputValue) {
+function axiosFetch(inputValue, page) {
   const query = encodeURI(inputValue);
-  const APIPR = apiUrl + `query_term=${query}&quality=${b5.value}&genre=${b6.value}&limit=30&sort_by=title&page=1`;
-  b8.textContent = `Results For: ${inputValue}`;
+  const APIPR = apiUrl + `query_term=${query}&quality=${b5.value}&genre=${b6.value}&limit=30&page=${page}`;
+  
+  if (inputValue === '' && b6.value !== 'all') {
+    b8.textContent = `Results For: ${b6.value}`;
+  } else {
+    b8.textContent = `Results For: ${inputValue}`;
+  }
 
   axios.get(APIPR)
     .then(response => {
       MovieDisplay(response.data.data)
       b9.textContent = `Total: ${response.data.data.movie_count}`;
+      if (response.data.data.movie_count > 30) {
+        pageBtn(response.data.data);
+      } else {
+        b10.innerHTML = '';
+      }
     })
     .catch(error => {
       if (error.message === "Cannot read properties of undefined (reading 'forEach')") {
         b8.textContent = `Sorry, There is no results for: '${inputValue}'`;
         b9.textContent = '';
+        b10.innerHTML = '';
       };
       console.log(error);
     });
@@ -69,8 +83,60 @@ function MovieDisplay(data) {
 
     div1.append(img, span);
     div2.append(div1, div3);
-    div3.append(h4_1, h5_1)
+    div3.append(h4_1, h5_1);
     b7.append(div2);
+    GenreTags(movie, div2);
   });
   console.log(data);
 };
+
+function GenreTags(genre, div2) {
+  const tags = genre.genres;
+  const div = document.createElement('div');
+  tags.forEach(tag => {
+    const span = document.createElement('span');
+    span.classList.add('c8');
+    span.textContent = tag;
+    div.append(span);
+  });
+  div2.append(div);
+};
+
+function pageBtn(data) {
+  const backBtn = document.createElement('button');
+  const nextbtn = document.createElement('button');
+  const pageNum = document.createElement('span');
+  const pageEstimated = () => Math.ceil(data.movie_count / data.limit);
+  
+  backBtn.classList.add('c9');
+  nextbtn.classList.add('c9');
+  pageNum.classList.add('c10');
+
+  backBtn.innerHTML = '<ion-icon name="arrow-back"></ion-icon>';
+  nextbtn.innerHTML = '<ion-icon name="arrow-forward"></ion-icon>';
+  pageNum.textContent = data.page_number;
+  
+  if (data.page_number === 1) {
+    backBtn.disabled = true;
+    backBtn.style.opacity = '.8';
+  }
+  
+  if (data.page_number === pageEstimated()) {
+    nextbtn.disabled = true;
+    nextbtn.style.opacity = '.8';
+  }
+  nextbtn.addEventListener('click', () => {
+    currentPage++;
+    axiosFetch(b4.value, currentPage);
+  });
+
+  backBtn.addEventListener('click', () => {
+    if (currentPage > 1) {
+      currentPage--;
+      axiosFetch(b4.value, currentPage);
+    }
+  });
+
+  b10.innerHTML = '';
+  b10.append(backBtn, pageNum, nextbtn);
+}

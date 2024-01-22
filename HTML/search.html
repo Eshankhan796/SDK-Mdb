@@ -79,8 +79,50 @@
   </div>
   <div class="a11" id="b7">
   </div>
+  <div class="a13" id="b10"></div>
+  <div id="progress">
+    <span id="progress-value"><ion-icon name="arrow-up-outline"></ion-icon></span>
+  </div>
+  <footer>
+    <div class="line"></div>
+    <div class="social-media-icons">
+      <ion-icon onclick="window.open('https://www.facebook.com/siddek.ek.796', '_blank');" name="logo-facebook"></ion-icon>
+      <ion-icon onclick="window.open('https://github.com/Eshankhan796', '_blank');" name="logo-github"></ion-icon>
+      <ion-icon onclick="window.open('https://instagram.com/e_k.797', '_blank');" name="logo-instagram"></ion-icon>
+      <ion-icon onclick="window.open('https://twitter.com/EshanKh63227899', '_blank');" name="logo-twitter"></ion-icon>
+    </div>
+    <img style="display: block; margin: 0 auto 20px auto; height: 100px;" src="/resources/SDK Mdb.svg" alt="">
+    <p style="margin-bottom: 10px; font-size: 12px; color: #B3BECD;"><strong>Find an issue with this page? <span>Fix it on <a class="decoration" href="https://github.com/Eshankhan796/Js-To-Do">GitHub</a></span></strong></p>
+    <p style="margin-bottom: 25px; font-size: 12px; color: #B3BECD;"><strong>Need help? Email <a class="decoration" href="mailto:mrkhidden64@gmail.com,khaneshan796@gmail.com" target="_top">mrkhidden64@gmail.com</a></strong></p>
+    <p style="font-size: 14px; color: #B3BECD;"><strong>Special Thanks To</strong></p>
+    <p style="margin-bottom: 14px; font-size: 12px; color: #B3BECD;"><strong><a class="decoration" target="blank" href="https://openai.com">ChatGPT</a> | <a class="decoration" target="blank" href="https://yts.mx">YTS</a> | <a class="decoration" href="https://yts.mx/api" target="blank">YTS API</a> | <a class="decoration" href="https://replit.com/" target="blank">Replit</a> | <a class="decoration" href="https://ionic.io/ionicons/" target="blank">IonIcons</a> | <a class="decoration" href="https://spck.io/" target="blank">Spck</a></strong></p>
+    <p style="font-size: 12px; margin-bottom: 12px; color: #B3BECD;"><strong>Made with &#x2764; by Eshan khan</strong></p>
+    <p style="font-size: 11px; color: #B3BECD;"><strong>Copyright ©️ 2024</strong></p>
+  </footer>
   <!-- JavaScript -->
   <script src="/JS/app.js"></script>
+  <script>
+    let calcScrollValue = () => {
+      let scrollProgress = document.getElementById("progress");
+      let progressValue = document.getElementById("progress-value");
+      let pos = document.documentElement.scrollTop;
+      let calcHeight =
+        document.documentElement.scrollHeight -
+        document.documentElement.clientHeight;
+      let scrollValue = Math.round((pos * 100) / calcHeight);
+      if (pos > 100) {
+        scrollProgress.style.display = "grid";
+      } else {
+        scrollProgress.style.display = "none";
+      }
+      scrollProgress.addEventListener("click", () => {
+        document.documentElement.scrollTop = 0;
+      });
+      scrollProgress.style.background = `conic-gradient(#ff8c00 ${scrollValue}%, #252429 ${scrollValue}%)`;
+    };
+
+    window.onscroll = calcScrollValue;
+  </script>
   <!-- ion-icon JavaScript -->
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
