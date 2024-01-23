@@ -243,6 +243,7 @@ nav {
   margin-top: auto;
   margin-bottom: auto;
   margin-right: 5px;
+  margin-left: auto;
   background-image: linear-gradient(90deg, #FF9900, #FF3366);
   color: transparent;
   background-clip: text;
@@ -276,6 +277,48 @@ nav {
   border: 2px solid #252429;
   padding: 5px 8px;
   border-radius: 20px;
+}
+
+.c11 {
+  width: 300px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  border-radius: 5px;
+}
+
+.c12{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 25px 0 0 0;
+}
+
+.c13 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  list-style: none;
+  padding: 20px 0 10px 0;
+}
+
+.c14 {
+  background-image: linear-gradient(90deg, #FF9900, #FF3366);
+  color: transparent;
+  background-clip: text;
+  font-weight: bold;
+}
+
+.c14:not(:first-child)::before {
+  content: "|";
+  margin: 0 6px;
+  color: #ff8c00;
+}
+
+.c15 {
+  width: 100%;
+  height: auto;
 }
 
 footer {
@@ -334,6 +377,7 @@ footer {
 }
 
 .decoration::after {
+  text-decoration: none;
   content: '';
   position: absolute;
   width: 100%;
@@ -350,6 +394,7 @@ footer {
 .decoration:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
+  text-decoration: none;
 }
 
 
