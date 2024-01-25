@@ -72,7 +72,7 @@
       window.location.href = '/HTML/search.html';
       const InputData = b3.value.trim();
       const encrypted = btoa(InputData);
-      sessionStorage.setItem('searched', JSON.stringify(encrypted));
+      localStorage.setItem('searched', JSON.stringify(encrypted));
     };
   </script>
   <!-- ion-icon JavaScript -->

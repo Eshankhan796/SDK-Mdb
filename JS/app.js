@@ -16,7 +16,7 @@ window.onload = () => {
 };
 
 function SessionInputTransfer() {
-  const SessionValue = JSON.parse(sessionStorage.getItem('searched'));
+  const SessionValue = JSON.parse(localStorage.getItem('searched'));
   const decrypted = atob(SessionValue);
   b4.value = decrypted;
 }
@@ -92,7 +92,7 @@ function MovieDisplay(data) {
     GenreTags(movie, div2);
     div2.addEventListener('click', () => {
       const movieId = movie.id;
-      sessionStorage.setItem('movieId', JSON.stringify(movieId));
+      localStorage.setItem('movieId', JSON.stringify(movieId));
       window.location.href = '/HTML/detail.html';
     });
   });
