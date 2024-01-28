@@ -368,8 +368,8 @@ nav {
 }
 
 .c22 {
-  height: 400px;
-  width: 330px;
+  height: auto;
+  width: 350px;
   margin: 20px;
   padding: 15px;
   border-radius: 20px;
@@ -382,6 +382,25 @@ nav {
   overflow-x: scroll;
   flex-direction: row;
   align-items: center;
+  gap: 0 20px;
+}
+
+.c23::-webkit-scrollbar,
+.c16::-webkit-scrollbar {
+  height: 10px;
+}
+
+.c23::-webkit-scrollbar-track,
+.c16::-webkit-scrollbar-track {
+  background-color: transparent;
+  margin-inline: 10px;
+}
+
+.c23::-webkit-scrollbar-thumb,
+.c16::-webkit-scrollbar-thumb{
+  background-color: #ff8c00;
+  border: 3.5px solid #252429;
+  border-radius: 20px;
 }
 
 .c24 {
@@ -407,6 +426,25 @@ nav {
 
 .c27 {
   margin-left: auto;
+}
+
+.c28 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.c29 {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  background-color: #11FFAC;
+  margin: 0 auto;
 }
 
 footer {

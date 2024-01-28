@@ -143,12 +143,13 @@ function axiosFetch(movieId) {
       MovieDisplay(response.data.data);
     })
     .catch(error => {
-      console.log(error);
-    })
+      if (error.message === "Network Error") {
+        window.alert('Sorry, You are not connected to internet');
+      };
+    });
 };
 
 function MovieDisplay(data) {
-  console.log(data);
   const img1 = document.createElement('img');
   const img2 = document.createElement('img');
   const img3 = document.createElement('img');
@@ -222,7 +223,7 @@ function MovieDisplay(data) {
   div4.append(span2, ul2);
   div1.append(img1, ul1, div2, div4, h3, p, div3, iframe);
   d1.append(div1);
-  torrentDisplay(data.movie.torrents);
+  torrentDisplay(data.movie.torrents, data);
 };
 
 function formatMovieRuntime(runtime) {
@@ -239,8 +240,9 @@ function formatMovieRuntime(runtime) {
   return formattedRuntime;
 };
 
-function torrentDisplay(torrents) {
+function torrentDisplay(torrents, data) {
   const parentDiv = document.createElement('div');
+  const SuggUrl = `https://yts.mx/api/v2/movie_suggestions.json?movie_id=${data.movie.id}`;
   parentDiv.classList.add('c23');
   torrents.forEach(torrent => {
     const childDiv = document.createElement('div');
@@ -250,71 +252,142 @@ function torrentDisplay(torrents) {
     const div4 = document.createElement('div');
     const div5 = document.createElement('div');
     const div6 = document.createElement('div');
-    const div7 = document.createElement('div');
     const h3_1 = document.createElement('h3');
     const h3_2 = document.createElement('h3');
     const h3_3 = document.createElement('h3');
     const h3_4 = document.createElement('h3');
     const h3_5 = document.createElement('h3');
     const h3_6 = document.createElement('h3');
-    const h3_7 = document.createElement('h3');
+    const h4 = document.createElement('h5');
     const span1 = document.createElement('span');
     const span2 = document.createElement('span');
     const span3 = document.createElement('span');
     const span4 = document.createElement('span');
     const span5 = document.createElement('span');
     const span6 = document.createElement('span');
-    const span7 = document.createElement('span');
-    
+    const divs = [div1, div2, div3, div4, div5, div6];
+    const h3s = [h3_1, h3_2, h3_3, h3_4, h3_5, h3_6];
+    const spans = [span1, span2, span3, span4, span5, span6];
+
+
+    divs.forEach(div => {
+      div.classList.add('c24');
+    });
+    h3s.forEach(h3 => {
+      h3.classList.add('c25');
+    });
+    spans.forEach(span => {
+      span.classList.add('c27');
+    });
+
     childDiv.classList.add('c22');
-    div1.classList.add('c24');
-    div2.classList.add('c24');
-    div3.classList.add('c24');
-    div4.classList.add('c24');
-    div5.classList.add('c24');
-    div6.classList.add('c24');
-    div7.classList.add('c24');
-    h3_1.classList.add('c25');
-    h3_2.classList.add('c25');
-    h3_3.classList.add('c25');
-    h3_4.classList.add('c25');
-    h3_5.classList.add('c25');
-    h3_6.classList.add('c25');
-    h3_7.classList.add('c25');
-    span1.classList.add('c27');
-    span2.classList.add('c27');
-    span3.classList.add('c27');
-    span4.classList.add('c27');
-    span5.classList.add('c27');
-    span6.classList.add('c27');
-    span7.classList.add('c27');
 
     span1.textContent = torrent.size;
     span2.textContent = torrent.quality;
     span3.textContent = torrent.audio_channels;
     span4.textContent = torrent.video_codec;
     span5.textContent = torrent.type;
-    span6.textContent = torrent.peers;
-    span7.textContent = torrent.seeds;
-    
+    span6.textContent = torrent.seeds;
+    h4.textContent = `Hash: ${torrent.hash}`;
     h3_1.innerHTML = '<ion-icon class="c26" name="document"></ion-icon> Size:';
     h3_2.innerHTML = '<ion-icon class="c26" name="resize"></ion-icon> Quality:';
     h3_3.innerHTML = '<ion-icon class="c26" name="volume-high"></ion-icon> Audio Channel:';
     h3_4.innerHTML = '<ion-icon class="c26" name="document-lock"></ion-icon> Video Codec:';
     h3_5.innerHTML = '<ion-icon class="c26" name="information"></ion-icon> Type:';
-    h3_6.innerHTML = '<ion-icon class="c26" name="cloud-download"></ion-icon> Peers:';
-    h3_7.innerHTML = '<ion-icon class="c26" name="cloud-upload"></ion-icon> Seeds:';
-    
-    
+    h3_6.innerHTML = '<ion-icon class="c26" name="cloud-upload"></ion-icon> Seeds:';
+
+
     div1.append(h3_1, span1);
     div2.append(h3_2, span2);
     div3.append(h3_3, span3);
     div4.append(h3_4, span4);
     div5.append(h3_5, span5);
     div6.append(h3_6, span6);
-    div7.append(h3_7, span7);
-    childDiv.append(div1, div2, div3, div4, div5, div6, div7);
+    childDiv.append(...divs, h4);
     parentDiv.append(childDiv);
+    SaveOptions(torrent, childDiv, data);
   });
   d1.append(parentDiv);
+  axios.get(SuggUrl)
+    .then(response => {
+      SuggDisply(response.data.data);
+    })
+    .catch(error => {
+      if (error.message === "Network Error") {
+        window.alert('Sorry, You are not connected to internet');
+      };
+    });
+};
+
+function SaveOptions(torrent, childDiv, data) {
+  const div = document.createElement('div');
+  const a1 = document.createElement('a');
+  const a2 = document.createElement('a');
+  const magnetBtn = document.createElement('button');
+  const downloadBtn = document.createElement('button');
+
+
+  a1.style.textDecoration = 'none';
+  a2.style.textDecoration = 'none';
+  div.classList.add('c28');
+  magnetBtn.classList.add('c29');
+  downloadBtn.classList.add('c29');
+
+  a1.href = `magnet:?xt=urn:btih:${torrent.hash}&tr=udp://tracker.openbittorrent.com:80&xs=https://yts.mx/torrent/download/${torrent.hash}&xl=${torrent.size_bytes}`;
+  a2.href = torrent.url;
+  magnetBtn.innerHTML = '<ion-icon name="magnet"></ion-icon> Magnet';
+  downloadBtn.innerHTML = '<ion-icon name="download"></ion-icon> Download';
+
+  a1.append(magnetBtn);
+  a2.append(downloadBtn);
+  div.append(a1, a2);
+  childDiv.append(div);
+}
+
+function SuggDisply(data) {
+  const div1 = document.createElement('div');
+  const div4 = document.createElement('div');
+  const h3_1 = document.createElement('h3');
+  const movies = data.movies;
+  div4.classList.add('c23');
+  div4.style.padding = '0 20px';
+  movies.forEach(movie => {
+    const div1 = document.createElement('div');
+    const div2 = document.createElement('div');
+    const div3 = document.createElement('div');
+    const img = document.createElement('img');
+    const span = document.createElement('span');
+    const h4_1 = document.createElement('h4');
+    const h5_1 = document.createElement('h5');
+    
+    img.classList.add('c1');
+    div1.classList.add('c2');
+    div2.classList.add('c4');
+    div3.classList.add('c6');
+    span.classList.add('c3');
+    h4_1.classList.add('c5');
+    h5_1.classList.add('c7');
+    
+    img.src = movie.medium_cover_image;
+    span.textContent = movie.rating;
+    h4_1.textContent = movie.title;
+    h5_1.textContent = movie.year;
+    
+    div1.append(img, span);
+    div2.append(div1, div3);
+    div3.append(h4_1, h5_1);
+    div4.append(div2);
+    div2.addEventListener('click', () => {
+      const movieId = movie.id;
+      localStorage.setItem('movieId', JSON.stringify(movieId));
+      window.location.href = '/HTML/detail.html';
+    });
+  });
+  
+  h3_1.style.padding = '20px';
+
+  h3_1.textContent = 'Suggestions:';
+
+  div1.append(h3_1, div4);
+  d1.append(div1);
 };
